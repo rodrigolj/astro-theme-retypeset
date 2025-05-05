@@ -2,11 +2,11 @@
 title: Guía de Estilo Markdown
 published: 2025-03-08
 updated: 2025-03-23
-tags: 
+tags:
   - Guía
 pin: 98
 toc: false
-lang: es
+lang: pt
 abbrlink: markdown-style-guide
 ---
 
@@ -30,10 +30,15 @@ Para crear un encabezado, agregue signos de numeral `#` delante de una palabra o
 ### Resultado
 
 # Encabezado 1
+
 ## Encabezado 2
+
 ### Encabezado 3
+
 #### Encabezado 4
+
 ##### Encabezado 5
+
 ###### Encabezado 6
 
 ## Párrafos
@@ -130,7 +135,7 @@ Para agregar una tabla, use tres o más guiones `---` para crear el encabezado d
 
 ## Bloques de Código
 
-Para crear un bloque de código, agregue tres acentos graves ```` ``` ```` al inicio y al final de su código. Puede indicar el lenguaje de programación después de los acentos graves de apertura para indicar cómo colorear y estilizar su código, por ejemplo: html, javascript, css, markdown, etc.
+Para crear un bloque de código, agregue tres acentos graves ` ``` ` al inicio y al final de su código. Puede indicar el lenguaje de programación después de los acentos graves de apertura para indicar cómo colorear y estilizar su código, por ejemplo: html, javascript, css, markdown, etc.
 
 ### Sintaxis
 

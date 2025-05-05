@@ -6,7 +6,7 @@ tags:
   - Tema de Blog
   - Guía
 pin: 99
-lang: es
+lang: pt
 abbrlink: theme-guide
 ---
 
@@ -21,20 +21,20 @@ Personaliza tu blog mediante la modificación del archivo de configuración [src
 ```ts
 site: {
   // título del sitio
-  title: 'Retypeset'
+  title: "Retypeset";
   // subtítulo del sitio
-  subtitle: 'Revive the beauty of typography'
+  subtitle: "Revive the beauty of typography";
   // descripción del sitio
-  description: 'Retypeset is a static blog theme...'
+  description: "Retypeset is a static blog theme...";
   // usar título/subtítulo/descripción en varios idiomas desde src/i18n/ui.ts en lugar de los estáticos anteriores
-  i18nTitle: true // true, false
+  i18nTitle: true; // true, false
   // nombre del autor
-  author: 'radishzz'
+  author: "radishzz";
   // url del sitio
-  url: 'https://retypeset.radishzz.cc'
+  url: "https://retypeset.radishzz.cc";
   // url del favicon
   // formatos recomendados: svg, png o ico
-  favicon: '/icons/favicon.svg' // o https://example.com/favicon.svg
+  favicon: "/icon/favicon.svg"; // o https://example.com/favicon.svg
 }
 ```
 
@@ -43,26 +43,26 @@ site: {
 ```ts
 color: {
   // modo de tema predeterminado
-  mode: 'light' // light, dark, auto
+  mode: "light"; // light, dark, auto
   // modo claro
   light: {
     // color primario
     // usado para títulos, hover, etc
-    primary: 'oklch(25% 0.005 298)'
+    primary: "oklch(25% 0.005 298)";
     // color secundario
     // usado para texto de publicaciones
-    secondary: 'oklch(40% 0.005 298)'
+    secondary: "oklch(40% 0.005 298)";
     // color de fondo
-    background: 'oklch(96% 0.005 298)'
+    background: "oklch(96% 0.005 298)";
   }
   // modo oscuro
   dark: {
     // color primario
-    primary: 'oklch(92% 0.005 298)'
+    primary: "oklch(92% 0.005 298)";
     // color secundario
-    secondary: 'oklch(77% 0.005 298)'
+    secondary: "oklch(77% 0.005 298)";
     // color de fondo
-    background: 'oklch(22% 0.005 298)'
+    background: "oklch(22% 0.005 298)";
   }
 }
 ```
@@ -73,19 +73,19 @@ color: {
 global: {
   // idioma predeterminado
   // idioma de la ruta raíz del sitio '/'
-  locale: 'zh' // zh, zh-tw, ja, en, es, ru
+  locale: "zh"; // zh, zh-tw, ja, en, es, ru
   // más idiomas
-  // genera rutas multilingües como '/es/' '/ru/'
-  // no incluir el código de idioma anterior nuevamente, puede ser un array vacío []
-  moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru'] // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru']
+  // Genera rutas multilingües como '/es/' '/ru/'
+  // no incluir el idioma predeterminado nuevamente, puede ser un array vacío []
+  moreLocales: ["zh-tw", "ja", "en", "es", "ru"]; // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru']
   // estilo de fuente
-  fontStyle: 'sans' // sans, serif
+  fontStyle: "sans"; // sans, serif
   // formato de fecha para publicaciones
-  // 2025-04-13, 04-13-2025, 13-04-2025, Apr 13 2025，13 Apr 2025
-  // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
-  dateFormat: 'YYYY-MM-DD'
+  dateFormat: "YYYY-MM-DD"; // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+  // espacio entre título y subtítulo
+  titleGap: 2; // 1, 2, 3
   // habilitar KaTeX para renderizar fórmulas matemáticas
-  katex: true // true, false
+  katex: true; // true, false
 }
 ```
 
@@ -94,21 +94,21 @@ global: {
 ```ts
 comment: {
   // habilitar sistema de comentarios
-  enabled: true // true, false
+  enabled: true; // true, false
   // sistema de comentarios waline
   waline: {
     // URL del servidor
-    serverURL: 'https://retypeset-comment.radishzz.cc'
+    serverURL: "https://retypeset-comment.radishzz.cc";
     // URL de emojis
     emoji: [
-      'https://unpkg.com/@waline/emojis@1.2.0/tw-emoji'
+      "https://unpkg.com/@waline/emojis@1.2.0/tw-emoji",
       // 'https://unpkg.com/@waline/emojis@1.2.0/bmoji'
       // más emojis: https://waline.js.org/en/guide/features/emoji.html
-    ]
+    ];
     // búsqueda de gif
-    search: false // true, false
+    search: false; // true, false
     // cargador de imágenes
-    imageUploader: false // true, false
+    imageUploader: false; // true, false
   }
 }
 ```
@@ -118,33 +118,33 @@ comment: {
 ```ts
 seo: {
   // ID de Twitter
-  twitterID: '@radishzz_'
+  twitterID: "@radishzz_";
   // verificación del sitio
   verification: {
     // google search console
-    google: 'AUCrz5F1e5qbnmKKDXl2Sf8u6y0kOpEO1wLs6HMMmlM'
+    google: "AUCrz5F1e5qbnmKKDXl2Sf8u6y0kOpEO1wLs6HMMmlM";
     // herramientas para webmasters de bing
-    bing: '64708CD514011A7965C84DDE1D169F87'
+    bing: "64708CD514011A7965C84DDE1D169F87";
     // webmaster de yandex
-    yandex: ''
+    yandex: "";
     // búsqueda baidu
-    baidu: ''
+    baidu: "";
   }
   // google analytics
-  googleAnalyticsID: ''
+  googleAnalyticsID: "";
   // umami analytics
-  umamiAnalyticsID: '520af332-bfb7-4e7c-9386-5f273ee3d697'
+  umamiAnalyticsID: "520af332-bfb7-4e7c-9386-5f273ee3d697";
   // verificación de seguimiento
   follow: {
     // ID de feed
-    feedID: ''
+    feedID: "";
     // ID de usuario
-    userID: ''
+    userID: "";
   }
   // clave de acceso apiflash
   // genera automáticamente capturas de pantalla del sitio web para imágenes de open graph
   // obtén tu clave de acceso en: https://apiflash.com/
-  apiflashKey: ''
+  apiflashKey: "";
 }
 ```
 
@@ -155,24 +155,24 @@ footer: {
   // enlaces sociales
   links: [
     {
-      name: 'RSS',
-      url: '/rss.xml', // rss.xml, atom.xml
+      name: "RSS",
+      url: "/rss.xml", // rss.xml, atom.xml
     },
     {
-      name: 'GitHub',
-      url: 'https://github.com/radishzzz/astro-theme-retypeset',
+      name: "GitHub",
+      url: "https://github.com/radishzzz/astro-theme-retypeset",
     },
     {
-      name: 'X',
-      url: 'https://x.com/radishzz_',
+      name: "Twitter",
+      url: "https://x.com/radishzz_",
     },
     // {
     //   name: 'Email',
     //   url: 'https://example@gmail.com',
     // }
-  ]
+  ];
   // año de inicio del sitio web
-  startYear: 2024
+  startYear: 2024;
 }
 ```
 
@@ -181,17 +181,17 @@ footer: {
 ```ts
 preload: {
   // estrategias de precarga de enlaces
-  linkPrefetch: 'viewport' // hover, tap, viewport, load
+  linkPrefetch: "viewport"; // hover, tap, viewport, load
   // URL del servidor de comentarios
-  commentURL: 'https://retypeset-comment.radishzz.cc'
+  commentURL: "https://retypeset-comment.radishzz.cc";
   // URL de alojamiento de imágenes
-  imageHostURL: 'https://image.radishzz.cc'
+  imageHostURL: "https://image.radishzz.cc";
   // js personalizado de google analytics
   // para usuarios que redirigen javascript de analytics a un dominio personalizado
-  customGoogleAnalyticsJS: ''
+  customGoogleAnalyticsJS: "";
   // js personalizado de umami analytics
   // para usuarios que implementan umami por su cuenta, o redirigen javascript de analytics a un dominio personalizado
-  customUmamiAnalyticsJS: 'https://js.radishzz.cc/jquery.min.js'
+  customUmamiAnalyticsJS: "https://js.radishzz.cc/jquery.min.js";
 }
 ```
 
@@ -325,19 +325,28 @@ Especifica el idioma del artículo. Solo se puede especificar un idioma. Si no s
 
 ```md
 # src/config.ts
+
 # locale: 'en'
+
 # moreLocales: ['es', 'ru']
 
 # lang: ''
-src/content/posts/apple.md   -> example.com/posts/apple/
-                             -> example.com/es/posts/apple/
-                             -> example.com/ru/posts/apple/
+
+src/content/posts/apple.md -> example.com/posts/apple/
+-> example.com/es/posts/apple/
+-> example.com/ru/posts/apple/
+
 # lang: en
-src/content/posts/apple.md   -> example.com/posts/apple/
+
+src/content/posts/apple.md -> example.com/posts/apple/
+
 # lang: es
-src/content/posts/apple.md   -> example.com/es/posts/apple/
+
+src/content/posts/apple.md -> example.com/es/posts/apple/
+
 # lang: ru
-src/content/posts/apple.md   -> example.com/ru/posts/apple/
+
+src/content/posts/apple.md -> example.com/ru/posts/apple/
 ```
 
 #### abbrlink
@@ -346,17 +355,117 @@ Personaliza la URL del artículo. Solo puede contener letras minúsculas, númer
 
 ```md
 # src/config.ts
+
 # locale: 'en'
+
 # moreLocales: ['es', 'ru']
+
 # lang: 'es'
 
 # abbrlink: ''
-src/content/posts/apple.md           ->  example.com/es/posts/apple/
-src/content/posts/guide/apple.md     ->  example.com/es/posts/guide/apple/
-src/content/posts/2025/03/apple.md   ->  example.com/es/posts/2025/03/apple/
+
+src/content/posts/apple.md -> example.com/es/posts/apple/
+src/content/posts/guide/apple.md -> example.com/es/posts/guide/apple/
+src/content/posts/2025/03/apple.md -> example.com/es/posts/2025/03/apple/
 
 # abbrlink: 'banana'
-src/content/posts/apple.md           ->  example.com/es/posts/banana/
-src/content/posts/guide/apple.md     ->  example.com/es/posts/banana/
-src/content/posts/2025/03/apple.md   ->  example.com/es/posts/banana/
+
+src/content/posts/apple.md -> example.com/es/posts/banana/
+src/content/posts/guide/apple.md -> example.com/es/posts/banana/
+src/content/posts/2025/03/apple.md -> example.com/es/posts/banana/
+```
+
+## Configuración Adicional
+
+Más allá del archivo de configuración `src/config.ts`, hay algunas opciones de configuración dispersas en otros archivos.
+
+### Resaltado de Sintaxis
+
+Temas de resaltado de sintaxis para bloques de código.
+
+```ts
+// src/astro.config.ts
+
+shikiConfig: {
+  // temas disponibles: https://shiki.style/themes
+  // el color de fondo sigue el tema del blog por defecto, no el tema de resaltado de sintaxis
+  themes: {
+    light: "github-light"; // tema claro
+    dark: "github-dark"; // tema oscuro
+  }
+}
+```
+
+### Extracto de Artículo
+
+Límite de caracteres para extractos automáticos de artículos.
+
+```ts
+// src/utils/description.ts
+
+const EXCERPT_LENGTHS: Record<
+  ExcerptScene,
+  {
+    cjk: number; // Chino, Japonés, Coreano
+    other: number; // Otros idiomas
+  }
+> = {
+  list: {
+    // Página principal
+    cjk: 120, // Límite de extracto es 120 caracteres
+    other: 240, // Límite de extracto es 240 caracteres
+  },
+};
+```
+
+### Open Graph
+
+Estilo para imágenes sociales Open Graph.
+
+```ts
+// src/pages/og/[...image].ts
+
+getImageOptions: (_path, page) => ({
+  logo: {
+    path: "./public/icon/og-logo.png", // ruta local requerida y formato PNG
+    size: [250], // ancho del logo
+  },
+  font: {
+    title: {
+      // título
+      families: ["Noto Sans SC"], // fuente
+      weight: "Bold", // peso
+      color: [34, 33, 36], // color
+      lineHeight: 1.5, // altura de línea
+    },
+  },
+  fonts: [
+    // rutas de fuentes (locales o remotas)
+    "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/SubsetOTF/SC/NotoSansSC-Bold.otf",
+    "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf",
+  ],
+  bgGradient: [[242, 241, 245]], // color de fondo
+  // más configuraciones: https://github.com/delucis/astro-og-canvas/tree/latest/packages/astro-og-canvas
+});
+```
+
+### Canal RSS
+
+Esquema de colores para la página de feed RSS.
+
+```html
+<!-- public/rss-style.xsl -->
+
+<style type="text/css">
+  body {
+    margin: 0;
+    color: oklch(25% 0.005 298);
+  } /* color de fuente */
+  .bg-white {
+    background-color: oklch(0.96 0.005 298) !important;
+  } /* color de fondo */
+  .text-gray {
+    color: oklch(0.25 0.005 298 / 75%) !important;
+  } /* color de fuente secundario */
+</style>
 ```

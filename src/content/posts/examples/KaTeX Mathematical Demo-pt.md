@@ -1,7 +1,7 @@
 ---
 title: KaTeX Demostración Matemática
 published: 2025-04-01
-lang: es
+lang: pt
 abbrlink: katex-mathematical-demo
 ---
 
@@ -52,7 +52,7 @@ $$
 
 para algún $c$ entre $a$ y $x$.
 
-$\KaTeX$ no tiene una opción de alineación a la derecha, por lo que se utiliza una columna alineada adicional para los números de ecuación. Estos son empujados a la derecha mediante el espaciado mkern, por defecto \mkern100mu. Se pueden utilizar tanto entornos align como align*, así como \tag y \notag.
+$\KaTeX$ no tiene una opción de alineación a la derecha, por lo que se utiliza una columna alineada adicional para los números de ecuación. Estos son empujados a la derecha mediante el espaciado mkern, por defecto \mkern100mu. Se pueden utilizar tanto entornos align como align\*, así como \tag y \notag.
 
 ## Entorno Align
 
@@ -64,7 +64,7 @@ $$
 \end{align}
 $$
 
-## Entorno Align*
+## Entorno Align\*
 
 $$
 \begin{align}
@@ -148,4 +148,4 @@ $$
 \end{align*}
 $$
 
-*Ejemplos tomados de [KaTeX Live Demo](https://sixthform.info/katex/examples/demo.html)*
+_Ejemplos tomados de [KaTeX Live Demo](https://sixthform.info/katex/examples/demo.html)_
